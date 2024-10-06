@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://f2e8aiwmtwob"]
+
+[ext_resource type="Texture2D" uid="uid://cqm7t54wjltt5" path="res://assets/dialogue_box.png" id="1_hgxd5"]
+
+[node name="DialogueBox" type="MarginContainer"]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 103.0
+offset_bottom = 121.0
+scale = Vector2(13.28, 6.31284)
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_hgxd5")
+region_rect = Rect2(8, 8, 16, 16)
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_right = 27.0
+offset_bottom = 22.0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 1.12952
+offset_top = 42.1364
+offset_right = 100.13
+offset_bottom = 110.136

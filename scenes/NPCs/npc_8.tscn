@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cjypnjiq3t3bs"]
+
+[ext_resource type="Texture2D" uid="uid://c8gns5um0w0ys" path="res://assets/Yeni klasör/npc8_0001.png" id="1_jdtsm"]
+[ext_resource type="Texture2D" uid="uid://ljrpqstlahp" path="res://assets/Yeni klasör/npc8_0002.png" id="2_8bsi3"]
+[ext_resource type="Texture2D" uid="uid://d05g4y8ynpw62" path="res://assets/Yeni klasör/npc8_0003.png" id="3_g21iq"]
+[ext_resource type="Texture2D" uid="uid://cqup0sypwnnen" path="res://assets/Yeni klasör/npc8_0004.png" id="4_dcba2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1apmj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jdtsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8bsi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g21iq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dcba2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="npc8" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1apmj")
+autoplay = "default"

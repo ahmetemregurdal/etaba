@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bw46et786a13q"
+path="res://.godot/imported/Black_SEDAN_CLEAN_All_039.png-9cf6128b9c2807e69d8676ef7b22eeba.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/TopDown Vehicles v1.17/SEDAN TOPDOWN/Black/SEPARATED/Black_SEDAN_CLEAN_All_039.png"
+dest_files=["res://.godot/imported/Black_SEDAN_CLEAN_All_039.png-9cf6128b9c2807e69d8676ef7b22eeba.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

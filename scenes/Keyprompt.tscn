@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://br0satk6advmg"]
+
+[ext_resource type="Texture2D" uid="uid://dt8htwl66fxg6" path="res://assets/Keys/Keys.png" id="1_n4jso"]
+[ext_resource type="Texture2D" uid="uid://c4v1r1yktqu3u" path="res://assets/Keys/KeysPressed.png" id="2_v84ci"]
+
+[sub_resource type="GDScript" id="GDScript_5mo8g"]
+script/source = "extends Node2D
+"
+
+[sub_resource type="Animation" id="Animation_2uosp"]
+resource_name = "KeyPrompt"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Key:texture")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("1_n4jso"), ExtResource("2_v84ci")]
+}
+
+[sub_resource type="Animation" id="Animation_8opd6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Key:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_n4jso")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hu852"]
+_data = {
+"KeyPrompt": SubResource("Animation_2uosp"),
+"RESET": SubResource("Animation_8opd6")
+}
+
+[node name="Keyprompt" type="Node2D"]
+script = SubResource("GDScript_5mo8g")
+
+[node name="Key" type="Sprite2D" parent="."]
+texture = ExtResource("1_n4jso")
+hframes = 5
+vframes = 8
+frame = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_hu852")
+}
+autoplay = "KeyPrompt"

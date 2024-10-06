@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cde5vfmf71kbg"]
+
+[ext_resource type="Texture2D" uid="uid://bypj30hqbc8w4" path="res://assets/Yeni klasör/npc kral_0001.png" id="1_cpyht"]
+[ext_resource type="Texture2D" uid="uid://dqf6rcalfxdae" path="res://assets/Yeni klasör/npc kral_0002.png" id="2_0xq8d"]
+[ext_resource type="Texture2D" uid="uid://dsm011wetewrx" path="res://assets/Yeni klasör/npc kral_0003.png" id="3_y5n74"]
+[ext_resource type="Texture2D" uid="uid://cd5mvvf4c2wwq" path="res://assets/Yeni klasör/npc kral_0004.png" id="4_ejxj8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bcuvk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cpyht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0xq8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y5n74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ejxj8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="npc10" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bcuvk")
+autoplay = "default"

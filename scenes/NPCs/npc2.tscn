@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmll120evygcn"]
+
+[ext_resource type="Texture2D" uid="uid://bwybisru82nfb" path="res://assets/Yeni klasör/LABNPC_0001.png" id="1_njj5e"]
+[ext_resource type="Texture2D" uid="uid://dqqvtpqstn160" path="res://assets/Yeni klasör/LABNPC_0002.png" id="2_vmy4f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ve7b1"]
+atlas = ExtResource("1_njj5e")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yc353"]
+atlas = ExtResource("2_vmy4f")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mwcna"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ve7b1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yc353")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Npc2" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mwcna")
+autoplay = "default"
+frame_progress = 0.545422

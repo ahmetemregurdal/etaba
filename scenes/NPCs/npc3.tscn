@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpuedflepwldi"]
+
+[ext_resource type="Texture2D" uid="uid://b4p87gbla7da" path="res://assets/Yeni klasör/npc1_0001.png" id="1_365dy"]
+[ext_resource type="Texture2D" uid="uid://fxx7rfkyhmll" path="res://assets/Yeni klasör/npc1_0002.png" id="2_4t5ix"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w0yl2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_365dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4t5ix")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.5
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w0yl2")
+autoplay = "default"
